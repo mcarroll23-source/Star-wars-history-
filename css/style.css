@@ -22,3 +22,56 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+/* This code adds spacing and a white background to each content section. */
+.content-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* This code makes the text inside the sections easier to read. */
+.section-text {
+    line-height: 1.6;
+}
+
+/* This code styles the Jedi header with a dark background and light text. */
+#jedi-header {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* This code styles the Jedi footer with a dark background and light text. */
+#jedi-footer {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* This code styles the Sith header with a dark background and light text. */
+#sith-header {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* This code styles the Sith footer with a dark background and light text. */
+#sith-footer {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* This code uses Flexbox to place the Jedi sections side by side with space between them. */
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* This code allows each content section to take up equal space in the Flexbox container. */
+.flex-container .content-section {
+    flex: 1;
+}

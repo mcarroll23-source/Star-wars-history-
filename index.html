@@ -17,8 +17,7 @@
 <body>
 
     <!-- This code creates the top section of the webpage and contains the title. -->
-    <header>
-
+    <header id="jedi-header">
         <!-- This code creates the main heading for the webpage. -->
         <h1>Star Wars Jedi</h1>
 
@@ -26,43 +25,45 @@
 
     <!-- This code contains the main information and content of the webpage. -->
     <main>
+        <!-- This code creates a container for the Jedi sections. -->
+        <div class="flex-container">
+            <!-- This code uses the content-section class to style this section. -->
+            <section class="content-section">
+                <!-- This code creates a heading for the section about the Jedi. -->
+                <h2>What Are the Jedi?</h2>
 
-        <!-- This code organizes information about what the Jedi are into its own section. -->
-        <section>
+                <!-- This code uses the section-text class to style the text inside the section. -->
+                <p class="section-text">The Jedi are an organization of Force-sensitive individuals in the Star Wars universe who work to protect peace and justice throughout the galaxy.</p>
 
-            <!-- This code creates a heading for the section about the Jedi. -->
-            <h2>What Are the Jedi?</h2>
-
-            <!-- This code creates a paragraph explaining what the Jedi are. -->
-            <p>The Jedi are an organization of Force-sensitive individuals in the Star Wars universe who work to protect peace and justice throughout the galaxy.</p>
-
-            <p>Jedi are trained to use the Force and lightsabers while following principles that encourage discipline, knowledge, and service to others.</p>
+                <p class="section-text">Jedi are trained to use the Force and lightsabers while following principles that encourage discipline, knowledge, and service to others.</p>
             
-            <!-- This code displays an image of Yoda from the images folder. -->
-            <img src="images/Yoda.jpg" alt="Yoda from Star Wars" width="500">
+                <!-- This code displays an image of Yoda from the images folder. -->
+                <img src="images/Yoda.jpg" alt="Yoda from Star Wars" width="500">
 
-        </section>
+            </section>
 
-        <section>
+            <section class="content-section">
 
-            <!-- This code creates a heading for the list of important Jedi. -->
-            <h2>Important Jedi</h2>
+                <!-- This code creates a heading for the list of important Jedi. -->
+                <h2>Important Jedi</h2>
 
-            <!-- This code creates an unordered list of important Jedi characters. -->
-            <ul>
+                <!-- This code uses the section-text class to style the unordered list of Jedi characters. -->
+                <ul class="section-text">
 
-                <!-- This code adds each jedi to the list. -->
-                <li>Yoda</li>
-                <li>Obi-Wan Kenobi</li>
-                <li>Luke Skywalker</li>
-                <li>Mace Windu</li>
-                <li>Anakin Skywalker</li>
-                <li>Qui-Gon Jinn</li>
-                <li>Kit Fisto</li>
+                    <!-- This code adds each jedi to the list. -->
+                    <li>Yoda</li>
+                    <li>Obi-Wan Kenobi</li>
+                    <li>Luke Skywalker</li>
+                    <li>Mace Windu</li>
+                    <li>Anakin Skywalker</li>
+                    <li>Qui-Gon Jinn</li>
+                    <li>Kit Fisto</li>
 
-            </ul>
+                </ul>
 
-        </section>
+            </section>
+
+        </div>    
 
         <!-- This code creates a link that takes the visitor to the Sith webpage. -->
         <a href="page2.html">Learn About the Sith</a>
@@ -70,7 +71,7 @@
     </main>
 
     <!-- This code creates the bottom section of the webpage with additional information and a link. -->
-    <footer>
+    <footer id="jedi-footer">
 
         <!-- This code adds a short message encouraging visitors to explore the page about the Sith. -->
         <p>Continue learning about Star Wars by exploring the Sith.</p>
