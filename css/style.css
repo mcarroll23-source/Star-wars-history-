@@ -1,0 +1,24 @@
+/* This code sets the background color, font family, and spacing for the entire page. */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* This code centers the main heading and changes its size. */
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* This code styles the section headings and changes their size. */
+h2 {
+    font-size: 28px;
+}
+
+/* This code makes paragraphs easier to read by changing their size and line spacing. */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
