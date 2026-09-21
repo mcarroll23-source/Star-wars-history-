@@ -4,20 +4,23 @@
 <!-- This code tells the browser that this webpage uses HTML5. -->
 <html lang="en">
 
-<head>
+<head> 
+ 
+    <!-- This code sets the character encoding for the webpage. --> 
+    <meta charset="UTF-8"> 
+ 
+    <!-- This code makes the webpage responsive on different screen sizes. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <!-- This code sets the character encoding for the webpage. -->
-    <meta charset="UTF-8">
-
-    <!-- This code makes the webpage responsive on different screen sizes. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- This code connects the HTML page to the CSS stylesheet. -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- This code sets the title that appears on the browser tab. -->
-    <title>Star Wars Jedi</title>
-
+    <!-- This code connects the webpage to the Bootstrap stylesheet. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- This code connects the HTML page to the CSS stylesheet. --> 
+    <link rel="stylesheet" href="./css/style.css"> 
+ 
+    <!-- This code sets the title that appears on the browser tab. --> 
+    <title>Star Wars Jedi</title> 
+ 
 </head>
 
 <!-- This code contains all of the content that appears on the webpage. -->
@@ -37,19 +40,19 @@
     <!-- This code creates navigation links between the Jedi and Sith pages. -->
     <nav aria-label="Star Wars navigation">
 
-        <!-- This code creates a link to the Sith webpage. -->
-        <a href="page2.html">Learn about the Sith</a>
+        <!-- This code creates a Bootstrap button that links to the Sith webpage. -->
+        <a href="page2.html" class="btn btn-primary mt-3">Learn About the Sith</a>
 
     </nav>
 
     <!-- This code contains the main information and content of the webpage. -->
-    <main id="main-content">
-        
+    <main id="main-content" class="container">
+
         <!-- This code creates a container for the Jedi sections. -->
-        <div class="flex-container">
+        <div class="row g-4">
 
             <!-- This code creates a section containing information about the Jedi. -->
-            <section class="content-section">
+            <section class="content-section col-md-6">
 
                 <!-- This code creates a heading for the section about the Jedi. -->
                 <h2>What Are the Jedi?</h2>
@@ -59,13 +62,13 @@
 
                 <p class="section-text">Jedi are trained to use the Force and lightsabers while following principles that encourage discipline, knowledge, and service to others.</p>
 
-                <!-- This code displays an image of Yoda with descriptive alternative text. -->
-                <img src="images/Yoda.jpg" alt="Yoda, a green Jedi Master from Star Wars" width="500">
+                <!-- This code displays Yoda and uses Bootstrap to make the image responsive. -->
+                <img src="images/Yoda.jpg" alt="Yoda from Star Wars" class="img-fluid">
 
             </section>
 
             <!-- This code creates a section containing a list of important Jedi. -->
-            <section class="content-section">
+            <section class="content-section col-md-6">
 
                 <!-- This code creates a heading for the list of important Jedi. -->
                 <h2>Important Jedi</h2>
@@ -91,13 +94,13 @@
     </main>
 
     <!-- This code creates the bottom section of the webpage with additional information. -->
-    <footer id="jedi-footer">
+    <footer id="jedi-footer" class="mt-4 p-4">
 
         <!-- This code adds a short message encouraging visitors to explore the Sith page. -->
         <p>Continue learning about Star Wars by exploring the Sith.</p>
 
-        <!-- This code creates a meaningful link to the Sith webpage. -->
-        <a href="page2.html">Go to the Sith page</a>
+        <!-- This code creates a Bootstrap button that links to the Sith webpage. -->
+        <a href="page2.html" class="btn btn-primary mt-3">Go to the Sith Page</a>
 
     </footer>
 
