@@ -1,3 +1,4 @@
+
 /* This code sets the background color, font family, and spacing for the entire page. */
 body {
     background-color: #f2f2f2;
@@ -22,6 +23,38 @@ p {
     font-size: 18px;
     line-height: 1.6;
 }
+
+/* This code styles the navigation area and adds spacing around the links. */
+nav {
+    margin-bottom: 20px;
+}
+
+/* This code gives navigation links a high-contrast color on the light background. */
+nav a {
+    color: #003366;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* This code gives footer links a high-contrast color on the dark background. */
+footer a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* This code makes navigation links easier to see when they receive keyboard focus. */
+nav a:focus {
+    outline: 3px solid #000000;
+    outline-offset: 2px;
+}
+
+/* This code makes footer links easier to see when they receive keyboard focus. */
+footer a:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
 /* This code adds spacing and a white background to each content section. */
 .content-section {
     background-color: white;
@@ -32,6 +65,12 @@ p {
 /* This code makes the text inside the sections easier to read. */
 .section-text {
     line-height: 1.6;
+}
+
+/* This code keeps images from becoming wider than their container. */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* This code styles the Jedi header with a dark background and light text. */
@@ -65,6 +104,7 @@ p {
     padding: 20px;
     margin-top: 20px;
 }
+
 /* This code uses Flexbox to place the Jedi sections side by side with space between them. */
 .flex-container {
     display: flex;
@@ -75,3 +115,40 @@ p {
 .flex-container .content-section {
     flex: 1;
 }
+
+/* This code changes the layout for smaller screens such as phones. */
+@media (max-width: 768px) {
+
+    /* This code reduces the page spacing on smaller screens. */
+    body {
+        padding: 10px;
+    }
+
+    /* This code reduces the heading size on smaller screens. */
+    h1 {
+        font-size: 30px;
+    }
+
+    /* This code reduces the section heading size on smaller screens. */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* This code reduces the paragraph size on smaller screens. */
+    p {
+        font-size: 16px;
+    }
+
+    /* This code changes the Jedi sections from side-by-side to stacked on smaller screens. */
+    .flex-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* This code reduces the padding inside sections on smaller screens. */
+    .content-section {
+        padding: 15px;
+    }
+
+}
+
