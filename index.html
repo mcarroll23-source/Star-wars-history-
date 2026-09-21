@@ -1,16 +1,23 @@
+
 <!DOCTYPE html>
 
 <!-- This code tells the browser that this webpage uses HTML5. -->
-<html>
+<html lang="en">
+    
+<head>
 
-<head> 
- 
+    <!-- This code sets the character encoding for the webpage. -->
+    <meta charset="UTF-8">
+
+    <!-- This code makes the webpage responsive on different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- This code connects the HTML page to the CSS stylesheet. -->
-    <link rel="stylesheet" href="./css/style.css" /> 
-     
-    <!-- This code sets the title that appears on the browser tab. --> 
-    <title>Star Wars Jedi</title> 
- 
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- This code sets the title that appears on the browser tab. -->
+    <title>Star Wars Jedi</title>
+
 </head>
 
 <!-- This code contains all of the content that appears on the webpage. -->
@@ -18,17 +25,29 @@
 
     <!-- This code creates the top section of the webpage and contains the title. -->
     <header id="jedi-header">
+
         <!-- This code creates the main heading for the webpage. -->
         <h1>Star Wars Jedi</h1>
 
     </header>
 
+    <!-- This code creates navigation links between the Jedi and Sith pages. -->
+    <nav aria-label="Star Wars navigation">
+
+        <!-- This code creates a link to the Sith webpage. -->
+        <a href="page2.html">Learn about the Sith</a>
+
+    </nav>
+
     <!-- This code contains the main information and content of the webpage. -->
     <main>
+
         <!-- This code creates a container for the Jedi sections. -->
         <div class="flex-container">
-            <!-- This code uses the content-section class to style this section. -->
+
+            <!-- This code creates a section containing information about the Jedi. -->
             <section class="content-section">
+
                 <!-- This code creates a heading for the section about the Jedi. -->
                 <h2>What Are the Jedi?</h2>
 
@@ -36,12 +55,13 @@
                 <p class="section-text">The Jedi are an organization of Force-sensitive individuals in the Star Wars universe who work to protect peace and justice throughout the galaxy.</p>
 
                 <p class="section-text">Jedi are trained to use the Force and lightsabers while following principles that encourage discipline, knowledge, and service to others.</p>
-            
-                <!-- This code displays an image of Yoda from the images folder. -->
-                <img src="images/Yoda.jpg" alt="Yoda from Star Wars" width="500">
+
+                <!-- This code displays an image of Yoda with descriptive alternative text. -->
+                <img src="images/Yoda.jpg" alt="Yoda, a green Jedi Master from Star Wars" width="500">
 
             </section>
 
+            <!-- This code creates a section containing a list of important Jedi. -->
             <section class="content-section">
 
                 <!-- This code creates a heading for the list of important Jedi. -->
@@ -50,7 +70,7 @@
                 <!-- This code uses the section-text class to style the unordered list of Jedi characters. -->
                 <ul class="section-text">
 
-                    <!-- This code adds each jedi to the list. -->
+                    <!-- This code adds each Jedi to the list. -->
                     <li>Yoda</li>
                     <li>Obi-Wan Kenobi</li>
                     <li>Luke Skywalker</li>
@@ -63,23 +83,21 @@
 
             </section>
 
-        </div>    
-
-        <!-- This code creates a link that takes the visitor to the Sith webpage. -->
-        <a href="page2.html">Learn About the Sith</a>
+        </div>
 
     </main>
 
-    <!-- This code creates the bottom section of the webpage with additional information and a link. -->
+    <!-- This code creates the bottom section of the webpage with additional information. -->
     <footer id="jedi-footer">
 
-        <!-- This code adds a short message encouraging visitors to explore the page about the Sith. -->
+        <!-- This code adds a short message encouraging visitors to explore the Sith page. -->
         <p>Continue learning about Star Wars by exploring the Sith.</p>
 
-        <!-- This code creates another link to the Sith webpage. -->
-        <a href="page2.html">Go to the Sith Page</a>
+        <!-- This code creates a meaningful link to the Sith webpage. -->
+        <a href="page2.html">Go to the Sith page</a>
 
     </footer>
 
 </body>
 </html>
+
