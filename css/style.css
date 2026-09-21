@@ -60,6 +60,7 @@ footer a:focus {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 /* This code makes the text inside the sections easier to read. */
@@ -105,17 +106,6 @@ img {
     margin-top: 20px;
 }
 
-/* This code uses Flexbox to place the Jedi sections side by side with space between them. */
-.flex-container {
-    display: flex;
-    gap: 20px;
-}
-
-/* This code allows each content section to take up equal space in the Flexbox container. */
-.flex-container .content-section {
-    flex: 1;
-}
-
 /* This code changes the layout for smaller screens such as phones. */
 @media (max-width: 768px) {
 
@@ -137,12 +127,6 @@ img {
     /* This code reduces the paragraph size on smaller screens. */
     p {
         font-size: 16px;
-    }
-
-    /* This code changes the Jedi sections from side-by-side to stacked on smaller screens. */
-    .flex-container {
-        flex-direction: column;
-        gap: 10px;
     }
 
     /* This code reduces the padding inside sections on smaller screens. */
