@@ -151,3 +151,16 @@ img {
 .skip-link:focus {
     left: 10px;
 }
+
+/* This code gives Bootstrap buttons a custom Star Wars style. */
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    font-weight: bold;
+}
+
+/* This code changes the Bootstrap button color when the user moves the mouse over it. */
+.btn-primary:hover {
+    background-color: #001f3f;
+    border-color: #001f3f;
+}
