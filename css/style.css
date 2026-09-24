@@ -68,6 +68,14 @@ footer a:focus {
     line-height: 1.6;
 }
 
+/* This code uses Flexbox to arrange items in a flexible row layout. */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
 /* This code keeps images from becoming wider than their container. */
 img {
     max-width: 100%;
@@ -132,6 +140,11 @@ img {
     /* This code reduces the padding inside sections on smaller screens. */
     .content-section {
         padding: 15px;
+    }
+    
+        /* This code stacks Flexbox items vertically on smaller screens. */
+    .flex-container {
+        flex-direction: column;
     }
 
 }
